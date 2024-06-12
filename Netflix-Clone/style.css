@@ -1,0 +1,478 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    box-sizing: border-box;
+}
+
+.background{
+    background-image:linear-gradient(#000000a8,#111111e1), url(images/netplix.jpg);
+    height:80vh;
+    position: relative;
+    background-size: cover;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar{
+    height:12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem;
+    background-image:linear-gradient(#000000,#00000080);
+}
+
+.logo{
+    height:85px;
+}
+
+/* lan */
+ .signin-buttons{
+        display: flex;
+    }
+
+    .languageBtn{
+        position: relative;
+        background-color: #111111;
+        border: 2px solid #B3B3B3;
+        /* outline: 2px solid #B3B3B3; */
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    .translate{
+        position: absolute;
+        top: 10px;
+        left: 0;
+        margin-left:10px;
+        pointer-events: none;
+    }
+
+    .dropdown{
+        position: absolute;
+        left: 0;
+        margin-left:40px;
+        pointer-events: none;
+    }
+    
+    select{
+        height:2rem;
+        width:60px;
+        padding-left:35px;
+        background-color: #111111;
+        color:white;
+        border-width:0;
+        outline: none;
+        appearance: none;
+        font-size:0rem;
+    }
+    
+    select option{
+        background: #fff;
+        color:#000000;
+        font-size:1rem;
+    }
+
+.signin-btn{
+    background-color: #E50914;
+    color:white;
+    height:2.1rem;
+    width:5rem;
+    font-weight: 500;
+    font-size:1rem;
+    outline: none;
+    border: none;
+    border-radius:0.4rem;
+    margin-left:0.8rem;
+}
+
+.hero-container{
+    padding:4rem  1.8rem;
+    color:#fff;
+    text-align: center;
+}
+
+.hero-heading{
+    font-size:2rem;
+    padding: 0 1rem;
+}
+
+.hero-para-1{
+    padding:0.5rem 0 0.7rem 0;
+    color: #fff;
+}
+
+.email-container-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-1{
+    height:50px;
+    width:100%;
+    background-color: #00000055;
+    border: 0.5px solid #fff;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    color:#fff;
+}
+.email-2{
+    height:50px;
+    width:100%;
+    background-color: #00000055;
+    border: 0.5px solid #fff;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    color:#fff;
+}
+
+
+.email-1:hover{
+    outline:2px solid white;
+    
+}
+
+::placeholder{
+    font-size:1.2rem;
+}
+
+.getStartedBtn{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem 0rem;
+    min-height:3.2rem;
+    border-width: 0;
+    outline: none;
+    background-color: #E50914;
+    font-weight:600;
+    font-size:1.2rem;
+    color:#fff;
+    padding:0.5rem 1.2rem;
+    border-radius: 0.3rem;
+}
+
+.right-arrow{
+    margin-left:0.5rem;
+    height:20px;
+    font-weight:600;
+}
+
+.pink{
+    border-radius: 500% 500% 0 0;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%)
+}
+
+.curve-container{
+    height:100%;
+    background: radial-gradient(200% 390% at 50% -380%, rgba(64, 97, 231, 0.4) 98%, rgba(0, 0, 0, 0.1) 100%), black;
+
+}
+
+.cards-section{
+    padding: 1.8rem;
+    padding-top:3rem ;
+    color:#fff;
+}
+
+.section2-heading{
+    font-weight: 500;
+    padding: 0.7rem 0;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    width:100%;
+    border-radius: 1rem ;
+    background-image:linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.card-heading{
+    padding:1rem 1rem 5rem 1rem;
+    font-weight: 100;
+    font-size:13px;
+    flex-grow: 1;
+
+}
+
+.card-svg{
+    align-self: flex-end;
+    margin-left:  auto;
+}
+
+
+/* accordion */
+.section-accordion{
+    background-color: black;
+    height:100%;
+    padding:2rem;
+}
+
+.section-heading-accordion{
+    color: #fff;
+    font-size:1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight:500;
+    background-color: rgba(45,45,45);
+    padding:1.3rem ;
+    color:#fff;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-bottom: 0.1rem;
+    font-weight:500;
+}
+
+li{
+    list-style-type: none;
+    display: list-item;
+    font-size: 1.2rem;
+    width:100%;
+    margin-top:0.5rem;
+}
+
+.plus-sign{
+    height:30px;
+    color:white;
+}
+
+.plus-rotate{
+    transform: rotate(45deg);
+}
+
+.accordion-block{
+    padding:1.5rem;
+    background-color: rgba(45,45,45);
+    color:#fff;
+    display: block;
+}
+
+.accordion-block:hover{
+    background-color: #3b3434;
+    
+}
+
+.accordion-none{
+    display: none;
+}
+
+.email-container-2{
+    text-align: left;
+}
+
+.hero-para-2{
+    padding:4rem 0rem 0.5rem 0rem; 
+    color: #fff;
+}
+
+.section-footer{
+    height:100%;
+    background-color: #000000;
+    padding:0 3rem;
+}
+.number{
+    color:#B3B3B3;
+}
+
+.footer-container{
+    padding:1rem 0rem;
+    color: #B3B3B3;
+}
+
+.block-footer-container{
+    width:100%;
+}
+
+.footer-link{
+    color: #B3B3B3;
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+.footer-links-container{
+    width:100%;
+}
+
+.logo-bye{
+    color: #7E7E7E;
+    font-size: 0.83;
+    padding: 1rem 0rem;
+}
+
+@media (min-width:960px) {
+    .background{
+        height:95vh;
+    }
+
+    .logo{
+        height:150px;
+    }
+
+    .nav-bar{
+        padding:0rem 9rem;
+    }
+
+    .main{
+        padding:7rem 0rem;
+
+    }
+    
+    .email-container-1{
+        flex-direction: row;
+    }
+    
+    .email-1{
+        width: 50%;
+        height:52px;
+        margin-top: 0;
+    }
+    
+    .hero-container{
+        width:100vh
+    }
+    
+    .hero-heading{
+        font-size:3.8rem;
+        padding: 0 2rem;
+    }
+    
+    .getStartedBtn{
+        margin:4px 20px;
+        height:3.3rem;
+    }
+    
+    .section2-heading{
+        padding:0 0 0.6rem 8rem;
+        font-size: 1.6rem;
+
+    }
+    .card-container{
+        flex-wrap: nowrap;
+        padding:0 7rem;
+    }
+
+    .card{
+        position: relative;
+        margin:0.5rem;
+        padding:1rem 0;
+        flex-direction: column;
+        height:280px;
+        
+    }
+    
+    .card-heading{
+        font-size:1.3rem;
+    }
+
+    .card-svg{
+        position: absolute;
+        right:0;
+        bottom: 0;
+    }
+
+    .section-text-container{
+        padding: 0 7rem;
+    }
+    .section-heading-accordion{
+        font-size: 1.6rem;
+    }
+
+    .list-container{
+        width: 80%;
+    }
+
+    .accordion-button{
+         padding:1.6rem ;
+         font-size: 1.5rem;
+    }
+
+    li{
+        font-size:1.5rem;
+    }
+
+    .email-container-2{
+        display: flex;
+    }
+
+    .email-2{
+        width:65%;
+    }
+
+    .section-footer{
+        padding:0 0 0 11rem;
+    }
+
+    .footer-container{
+        display: flex;
+        width:85%;
+    }
+
+    .block-footer-container{
+        display: flex;
+    }
+
+    .footer-link{
+        font-size:16px;
+        margin-bottom: 0.8rem;
+    }
+    .number{
+        padding-bottom:24px;
+    }
+    .logo-bye{
+        padding-bottom: 5rem;
+    }
+
+    .dropdown{
+        margin-left: 100px;
+    }
+    select{
+        font-size: 1rem;
+        width: 120px;
+    }
+    
+   
+}
+
+
